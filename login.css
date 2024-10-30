@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a8e0ff, #8ed1c6, #fdd4e4);
+    background-size: 200% 200%;
+    animation: gradientBackground 15s ease infinite;
+    }
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+        
+h2 {
+    font-size: 1.8em;
+    color: #2b2d42;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 0.9em;
+    color: #4a4a4a;
+    display: block;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1.5rem;
+    background-color: #00b894;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #019b73;
+}
+
+.links {
+    margin-top: 1rem;
+    font-size: 0.9em;
+}
+.links a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Form Toggle */
+.form-group {
+    display: none;
+}
+.form-group.active {
+    display: block;
+}
+
+#signup-form{
+    overflow: scroll;
+    height: 300px;
+}
+        

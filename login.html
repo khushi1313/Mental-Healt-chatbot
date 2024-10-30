@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Login</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <img src="mental_health.jpg" alt="Logo" style="width:50px; margin-bottom:1rem;">
+        <h2 id="form-title">Good to see you again</h2>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-group active">
+            <label for="email">Your email</label>
+            <input type="email" id="email" placeholder="e.g. yourname@gmail.com" required>
+            
+            <label for="password">Your password</label>
+            <input type="password" id="password" placeholder="password" required>
+            
+            <button type="button" onclick="login()">Sign in</button>
+            <div class="links">
+                <p><a href="#" onclick="toggleForms()">Don't have an account?</a> | <a href="#">Forgot password?</a></p>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup-form" class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="full name" required>
+            
+            <label for="emailSignup">Your email</label>
+            <input type="email" id="emailSignup" placeholder="e.g. yourname@gmail.com" required>
+            
+            <label for="passwordSignup">Password</label>
+            <input type="password" id="passwordSignup" placeholder="Create password" required>
+            
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+            
+            <label for="bio">Tell us about yourself</label>
+            <input type="text" id="bio" placeholder="Your interests, challenges, etc.">
+            
+            <button type="button" onclick="signup()">Sign up</button>
+            <div class="links">
+                <p><a href="#" onclick="toggleForms()">Already have an account? Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
